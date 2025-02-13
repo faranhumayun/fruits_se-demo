@@ -4,8 +4,17 @@
 @theme {
   --color-primary: #de2c4d;
   --color-secondary: #fb923c;
-  --text-sm-custom: 4rem;
 
   --font-poppins: "Poppins", sans-serif;
   --font-averia-serif-libre: "Averia Serif Libre", serif;
+
+  /* --container-smm: 40rem; */
+
+  --breakpoint-*: initial;
+  --breakpoint-xs: 20rem;
+  --breakpoint-sm: 24rem;
+  --breakpoint-md: 40rem;
+  --breakpoint-lg: 48rem;
+  --breakpoint-xl: 64rem;
+  --breakpoint-2xl: 80rem;
 }
