@@ -14,17 +14,18 @@ const NavbarMenu = [
 ];
 
 const Navbar = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <nav>
-        <div className="container mx-auto flex justify-between items-center py-4 md:pt-4">
+        <div id="container" className="container mx-auto flex justify-between items-center py-4 md:pt-4">
           <div className="text-2xl font-bold uppercase flex text-center gap-2 select-none">
             <p className="text-primary">Fruit</p>
             <p className="text-secondary">Store</p>
             <FaLeaf className="text-green-500" />
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <ul className="flex items-center gap-6 text-gray-600">
               {NavbarMenu.map((navItem) => (
                 <li key={navItem.id}>
@@ -41,7 +42,7 @@ const Navbar = () => {
               </button>
             </ul>
           </div>
-          <div className="md:">
+          <div className="md:hidden">
             <LuMenu onClick={() => setIsOpen(!isOpen)} className="text-4xl" />
           </div>
         </div>
